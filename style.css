@@ -15,18 +15,18 @@ html {
 h1 {
   font-size: 50px;
   line-height: 64px;
-  color: #222;
+  color: #099178;
 }
 
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #222;
+  color: #099178;
 }
 
 h4 {
   font-size: 20px;
-  color: #222;
+  color: #099178;
 }
 
 h6 {
@@ -95,39 +95,38 @@ body {
   top: 0;
 }
 
-#navbar{
+#NAVBAR{
+  height: 150px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  
-
+  padding: 0 20px;
 }
-#navbar li{
+#navbarNav li{
  list-style: none;
- padding: 0 20px;
+ padding: 10px 20px;
  position: relative;
 }
-#navbar li a{
+#navbarNav li a{
   text-decoration:none ;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #099178;
   transition: 300ms;
   
 }
 
-#navbar li a:hover{
+#navbarNav li a:hover{
   color: #099178;
- 
-  
+
 }
 
-#navbar li a:hover,
-#navbar li a.active{
+#navbarNav li a:hover,
+#navbarNav li a.active{
   color: #099178;
 }
-#navbar li a.active:after,
-#navbar li a:hover:after{
+#navbarNav li a.active:after,
+#navbarNav li a:hover:after{
   content:"";
   width: 30%;
   height: 2px;
@@ -138,17 +137,50 @@ body {
 }
 
 /* Homee Page */
-#hero{
-  background-image: url("img/hero.png");
-  background-size: cover;
-  width: 100%;
-  height: 90vh;
-  background-position: top 25% right 0%;
-  padding: 0px 80px;
+#hero-section{
+  /* background-image: url("img/hero.png"); */
+  border: 10px solid gray;
+  border-radius: 30px;
+  margin: 0 20px 0 20px;
+  padding: 10px;
+}
+#events{
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius:50px;
+  background-color: black;
+
+}
+
+.dropdown{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  justify-content: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.dropdownBtn{
+  border: 5px solid black;
+  border-radius: 30px;
+  width: 25%;
+  margin: 0px 30px 5px 30px;
+  background-color: white;
+}
+
+#EventsDiv{
+  background-color: gray;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+
+
+
+.d-block {
+  border-radius:10px ;
+
 }
 
 #hero h4{
@@ -490,7 +522,7 @@ footer p{
 footer a{
   font-size: 13px;
   text-decoration: none;
-  color: #222;
+  color:#001F3F;
   margin-bottom: 10px;
 
 }
